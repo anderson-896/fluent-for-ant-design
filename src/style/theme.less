@@ -1,0 +1,44 @@
+@import '~ant-design-vue/dist/antd.less';
+@import './fluent.less';
+@primary-color: #06356b;                         // primary color for all components
+@link-color: #06356b;  
+@menu-dark-item-selected-bg: #0f01422c;
+@outline-color : #06356b; 
+@input-hover-border-color: #06356b; 
+@menu-dark-bg: transparent;
+@layout-sider-background: #dee2e6;
+@menu-item-active-bg: rgba(34, 63, 78, 0.451);
+@layout-header-background: #052141;
+@layout-sider-background: rgba(0, 129, 194, 0.055);
+@menu-collapsed-width: 48px;
+@menu-item-active-bg: rgba(3, 128, 190, 0.281);
+@border-radius-base: 2px;
+
+@layout-body-background : white;
+@layout-header-background : rgba(3, 128, 190, 0.281);
+
+.ant-menu-vertical {
+    border: none!important;
+    // overflow: hidden;
+}
+
+.ant-card-body {
+    padding: 10px!important;
+}
+
+.ant-layout-sider:not(.ant-layout-sider-collapsed) .ant-layout-sider-children .ant-menu-item {
+    padding-left: 16px!important;
+}
+
+.ant-layout-sider  .ant-menu-item.fl-border.reveal  {
+    margin: 0;
+}
+
+.ant-menu-item .anticon {
+    font-size: 16px!important;
+}
+
+.acrylic .ant-menu {
+    background: transparent;
+}
+
