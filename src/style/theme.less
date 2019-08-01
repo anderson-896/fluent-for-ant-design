@@ -8,14 +8,14 @@
 @menu-dark-bg: transparent;
 @layout-sider-background: #dee2e6;
 @menu-item-active-bg: rgba(34, 63, 78, 0.451);
-@layout-header-background: #052141;
-@layout-sider-background: rgba(0, 129, 194, 0.055);
+
 @menu-collapsed-width: 48px;
 @menu-item-active-bg: rgba(3, 128, 190, 0.281);
 @border-radius-base: 2px;
 
 @layout-body-background : white;
-@layout-header-background : rgba(3, 128, 190, 0.281);
+@layout-header-background : rgba(3, 45, 66, 0.281);
+@layout-sider-background: rgba(4, 35, 70, 0.781);
 
 .ant-menu-vertical {
     border: none!important;
@@ -30,8 +30,17 @@
     padding-left: 16px!important;
 }
 
-.ant-layout-sider  .ant-menu-item.fl-border.reveal  {
-    margin: 0;
+.ant-layout-sider  .ant-menu-item.fl-border.reveal, .fl-border.reveal.hamburguer  {
+  margin: 0;
+  padding-top: 4px!important;
+  height: 48px;
+}
+
+.fl-border.reveal.hamburguer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
 }
 
 .ant-menu-item .anticon {

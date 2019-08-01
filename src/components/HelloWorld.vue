@@ -1,16 +1,18 @@
 <template>
 	<a-layout id="components-layout-demo-custom-trigger">
-		<a-layout-sider class="acrylic light" :trigger="null" collapsible v-model="collapsed" width="300px" :collapsedWidth="48" style="overflow: hidden; position: fixed;  height: 100%; z-index: 1;">
+		<a-layout-sider class="acrylic" :trigger="null" collapsible v-model="collapsed" width="300px" :collapsedWidth="48" style="overflow: hidden; position: fixed;  height: 100%; z-index: 1;">
 			<div class="logo" />
-            <li role="menuitem" class="fl-border reveal light" style="cursor: pointer; width: 100%;" @click="()=> collapsed = !collapsed" >
-                <a-icon :component="MenuSvg" />
-            </li>
-			<a-menu theme="light" mode="inline" :defaultSelectedKeys="[]">               
-				<a-menu-item key="1" class="fl-border reveal light">
+            <div class="ant-menu ant-menu-vertical ant-menu-root ant-menu-dark ant-menu-inline">
+                <li class="fl-border reveal hamburguer" style="cursor: pointer; width: 100%; color: white; font-size: 16px;" @click="()=> collapsed = !collapsed" >
+                    <a-icon style="width: 14px;" :component="MenuSvg" />
+                </li>
+            </div>
+			<a-menu theme="dark" mode="inline" :defaultSelectedKeys="[]">               
+				<a-menu-item key="1" class="fl-border reveal">
 					<a-icon type="user" />
 					<span>nav 1</span>
 				</a-menu-item>
-				<a-menu-item key="2" class="fl-border reveal light">
+				<a-menu-item key="2" class="fl-border reveal">
                     <a-icon type="video-camera" />
                     <span>nav 2</span>
 				</a-menu-item>
@@ -21,7 +23,7 @@
 			</a-menu>
 		</a-layout-sider>
 		<a-layout style="position: absolute; left: 48px; z-index: 0; width: calc(100vw - 65px);">
-            <a-layout-header class="acrylic" style="color: white; padding: 0 20px; position: fixed; z-index: 2; width: 100%;">
+            <a-layout-header class="acrylic light" style=" padding: 0 20px; position: fixed; z-index: 2; width: 100%;">
                
                 Fluent for Ant Design Vue
             </a-layout-header>
