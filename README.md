@@ -1,6 +1,9 @@
 # fluent-for-ant-design
 
 > The Microsoft's Fluent Design System theme For Vue Ant Design
+![alt text](https://raw.githubusercontent.com/anderson-896/fluent-for-ant-design/master/pic%20(1).png)
+![alt text](https://raw.githubusercontent.com/anderson-896/fluent-for-ant-design/master/pic%20(2).png)
+![alt text](https://raw.githubusercontent.com/anderson-896/fluent-for-ant-design/master/pic%20(3).png)
 
 ## Build Setup
 
