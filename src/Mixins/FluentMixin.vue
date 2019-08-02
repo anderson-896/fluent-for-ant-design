@@ -1,5 +1,6 @@
 <script>
-import {reveal} from "@/fluent"
+import '../style/fluent-for-ant.less'
+import {reveal} from "../fluent"
 export default {
     data() {
         return {

@@ -44,10 +44,10 @@ const MenuSvg = {
   `
 }
 
-import RevealMixin from "@/Mixins/RevealMixin"
+import FluentMixin from "@/Mixins/FluentMixin"
 import home from "@/components/home"
 export default {
-    mixins: [RevealMixin],
+    mixins: [FluentMixin],
 	data(){
 		return {
             MenuSvg,

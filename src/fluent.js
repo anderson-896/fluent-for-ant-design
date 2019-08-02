@@ -111,3 +111,4 @@ export const reveal = () => {
     document.removeEventListener('mousemove', revealHandler);
     document.addEventListener('mousemove', revealHandler);    
 }
+

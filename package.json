@@ -1,9 +1,9 @@
 {
   "name": "fluent-for-ant-design",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "The Microsoft's Fluent Design System theme For Vue Ant Design",
   "author": "andersonaraujo.ti@gmail.com",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -62,5 +62,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": "src/Mixins/FluentMixin.vue"
 }

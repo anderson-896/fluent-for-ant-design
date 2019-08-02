@@ -4,7 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Antd from 'ant-design-vue'
-import './style/theme.less'
 
 Vue.config.productionTip = false
 Vue.use(Antd)
