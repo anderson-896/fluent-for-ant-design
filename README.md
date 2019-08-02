@@ -1,24 +1,38 @@
 # fluent-for-ant-design
 
-> The Microsoft's Fluent Design System theme For Vue Ant Design
-![alt text](https://raw.githubusercontent.com/anderson-896/fluent-for-ant-design/master/pic%20(1).png)
-![alt text](https://raw.githubusercontent.com/anderson-896/fluent-for-ant-design/master/pic%20(2).png)
-![alt text](https://raw.githubusercontent.com/anderson-896/fluent-for-ant-design/master/pic%20(3).png)
+The Microsoft's Fluent Design System theme For Vue.js Ant Design
 
-## Build Setup
+## [NPM Package](https://www.npmjs.com/package/fluent-for-ant-design)
 
-``` bash
-# install dependencies
-npm install
+![Preview](https://raw.githubusercontent.com/anderson-896/fluent-for-ant-design/master/pic%20(1).png)
 
-# serve with hot reload at localhost:8080
-npm run dev
+## Install
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+```
+npm i -S fluent-for-ant-design
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Usage
+
+![alt text](https://raw.githubusercontent.com/anderson-896/fluent-for-ant-design/master/pic%20(2).png)
+```html
+<template>
+  <div>
+    <div class="acrylic">Acrylic</div>
+    <div class="acrylic light">Acrylic light</div>
+    <div class="fl-border reveal">Reveal</div>
+    <div class="fl-border reveal light">Reveal</div>
+  </div>
+</template>
+
+<script>
+  import fluent from 'fluent-for-ant-design'
+  export default {
+    mixins: [fluent]
+  }
+</script>
+```
+![alt text](https://raw.githubusercontent.com/anderson-896/fluent-for-ant-design/master/pic%20(3).png)
+## License
+
+This project is licensed under [MIT License](http://en.wikipedia.org/wiki/MIT_License)
