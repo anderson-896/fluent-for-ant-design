@@ -2,6 +2,11 @@
 
 The Microsoft's Fluent Design System theme For Vue.js Ant Design
 
+## Current Features
+
+- Acrylic
+- Reveal Effect
+
 ## [NPM Package](https://www.npmjs.com/package/fluent-for-ant-design)
 
 ![Preview](https://raw.githubusercontent.com/anderson-896/fluent-for-ant-design/master/pic%20(1).png)
