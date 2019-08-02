@@ -1,30 +1,31 @@
 <template>
-	<a-layout id="components-layout-demo-custom-trigger">
-		<a-layout-sider class="acrylic" :trigger="null" collapsible v-model="collapsed" width="300px" :collapsedWidth="48" style="overflow: hidden; position: fixed;  height: 100%; z-index: 1;">
-			<div class="logo" />
-            <div class="ant-menu ant-menu-vertical ant-menu-root ant-menu-dark ant-menu-inline">
-                <li class="fl-border reveal hamburguer" style="cursor: pointer; width: 100%; color: white; font-size: 16px;" @click="()=> collapsed = !collapsed" >
-                    <a-icon style="width: 14px;" :component="MenuSvg" />
-                </li>
-            </div>
-			<a-menu theme="dark" mode="inline" :defaultSelectedKeys="[]">               
-				<a-menu-item key="1" class="fl-border reveal">
-					<a-icon type="user" />
-					<span>nav 1</span>
-				</a-menu-item>
-				<a-menu-item key="2" class="fl-border reveal">
-                    <a-icon type="video-camera" />
-                    <span>nav 2</span>
-				</a-menu-item>
-				<a-menu-item key="3" class="fl-border reveal light">
-                    <a-icon type="upload" />
-                    <span>nav 3</span> 
-				</a-menu-item>
-			</a-menu>
+	<a-layout id="components-layout-demo-custom-trigger">        
+		<a-layout-sider @focus="hand" class="acrylic" :trigger="null" collapsible v-model="collapsed" width="300px" :collapsedWidth="48" style="overflow: hidden; position: fixed;  height: 100%; z-index: 1001;">
+                <a-drawer :width="0" @close="toggle" :visible="visible" :maskStyle="{background: 'transparent'}"  placement="left"/>
+                <div class="logo" />
+                <div class="ant-menu ant-menu-vertical ant-menu-root ant-menu-dark ant-menu-inline">
+                    <li class="fl-border reveal hamburguer" style="cursor: pointer; width: 100%; color: white; font-size: 16px;" @click="toggle" >
+                        <a-icon style="width: 14px;" :component="MenuSvg" />
+                    </li>
+                </div>
+                <a-menu theme="dark" mode="inline" :defaultSelectedKeys="[]">               
+                    <a-menu-item key="1" class="fl-border reveal">
+                        <a-icon type="user" />
+                        <span>nav 1</span>
+                    </a-menu-item>
+                    <a-menu-item key="2" class="fl-border reveal">
+                        <a-icon type="video-camera" />
+                        <span>nav 2</span>
+                    </a-menu-item>
+                    <a-menu-item key="3" class="fl-border reveal">
+                        <a-icon type="upload" />
+                        <span>nav 3</span> 
+                    </a-menu-item>
+                </a-menu>
 		</a-layout-sider>
 		<a-layout style="position: absolute; left: 48px; z-index: 0; width: calc(100vw - 65px);">
-            <a-layout-header class="acrylic light" style=" padding: 0 20px; position: fixed; z-index: 2; width: 100%;">
-               
+            
+            <a-layout-header class="acrylic light" style=" padding: 0 20px; position: fixed; z-index: 2; width: 100%;">               
                 Fluent for Ant Design Vue
             </a-layout-header>
             <a-layout-content :style="{ padding: '90px 24px', background: '#fff', minHeight: 'auto', }">
@@ -43,23 +44,36 @@ const MenuSvg = {
   `
 }
 
-import {reveal} from "@/fluent"
+import RevealMixin from "@/Mixins/RevealMixin"
 import home from "@/components/home"
 export default {
+    mixins: [RevealMixin],
 	data(){
 		return {
             MenuSvg,
             collapsed: true,
             size: 'large',
+            visible: false
 		}
     },
-    mounted() {
-        reveal();
+    methods: {
+        hand() {
+            alert('a')
+        },
+        toggle() {
+            this.collapsed = !this.collapsed;
+            this.visible = !this.visible;
+        }
     },
     components: {home}
 }
 </script>
 <style>
+
+.ant-drawer-content {
+    background: transparent !important;
+}
+
 #components-layout-demo-custom-trigger {
 	height: 100vh;
 }

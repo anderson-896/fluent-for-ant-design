@@ -14,7 +14,7 @@
                 </a-col>
                 <a-col :span="8">
                     <a-card title="Card title" :bordered=false class="fl-border reveal light">
-                    <p>card content</p>
+                    <p>card content </p>
                     </a-card>   
                 </a-col>
             </a-row>
@@ -52,7 +52,6 @@
 </template>
 
 <script>
-
 import formComponent from "@/components/form"
 export default {
     components: {

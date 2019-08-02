@@ -1,5 +1,8 @@
 <template>
-  <a-form class="fl-border reveal light" id="components-form-demo-validate-other" :form="form" @submit="handleSubmit">
+  <a-form  id="components-form-demo-validate-other" :form="form" @submit="handleSubmit">
+    <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="Plain Text">
+      <span class="ant-form-text">Vue</span>
+    </a-form-item>
     <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="Plain Text">
       <span class="ant-form-text">Vue</span>
     </a-form-item>
