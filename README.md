@@ -12,6 +12,7 @@ The Microsoft's Fluent Design System theme For Vue.js Ant Design
 - Chorme 76+
 - Edge 44+
 
+## Links
 - [NPM Package](https://www.npmjs.com/package/fluent-for-ant-design)
 - [GitHub](https://github.com/anderson-896/fluent-for-ant-design)
 
