@@ -1,12 +1,14 @@
+var revealElements = []
+var highlightElements = []
 
 var revealHandler = (event) => {
     revealElements.forEach((element) => {
             revealEle(element);
+    });
+    highlightElements.forEach((element) => {
             spotEle(element);
     });
 }
-
-var revealElements = []
 
 const revealEle = (element) => {
     let rgb = element.classList.contains('light') ? '100,100,100' : '255,255,255';
@@ -64,6 +66,15 @@ const revealEle = (element) => {
 
 const spotEle = (element) => {
     let rgb = element.classList.contains('light') ? '150,150,150' : '255,255,255';
+    let size = '80';
+    let weight = '0.14';
+    if (element.classList.contains('highlight-small')){
+        size = '60';
+        weight = '0.10';
+    } else if (element.classList.contains('highlight-large')){
+        size = '130';
+        weight = '0.16';
+    }
     let outerWidth = (el) => {
         let width = el.offsetWidth;
         let style = getComputedStyle(el);
@@ -99,7 +110,7 @@ const spotEle = (element) => {
     if (mousePositionX > 0 && mousePositionX < menuWidth && mousePositionY > 0 && mousePositionY < menuHeight) {
         let percentageX = (mousePositionX / menuWidth) * 100;
         let percentageY = (mousePositionY / menuHeight) * 100;
-        element.style.backgroundImage = "radial-gradient(circle at " + percentageX + "% " + percentageY + "%, rgba(" + rgb + ",0.10), transparent 120px)";
+        element.style.backgroundImage = "radial-gradient(circle at " + percentageX + "% " + percentageY + "%, rgba(" + rgb + ", "+weight+"), transparent "+size+"px)";
     }
     else {
         element.style.backgroundImage =  "none";
@@ -108,6 +119,7 @@ const spotEle = (element) => {
 
 export const reveal = () => {
     revealElements = [...document.getElementsByClassName('reveal')];
+    highlightElements = [...document.getElementsByClassName('highlight')];
     document.removeEventListener('mousemove', revealHandler);
     document.addEventListener('mousemove', revealHandler);    
 }

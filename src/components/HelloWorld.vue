@@ -4,20 +4,20 @@
                 <a-drawer :width="0" @close="toggle" :visible="visible" :maskStyle="{background: 'transparent'}"  placement="left"/>
                 <div class="logo" />
                 <div class="ant-menu ant-menu-vertical ant-menu-root ant-menu-dark ant-menu-inline">
-                    <li class="fl-border reveal hamburguer" style="cursor: pointer; width: 100%; color: white; font-size: 16px;" @click="toggle" >
+                    <li class="highlight reveal hamburguer" style="cursor: pointer; width: 100%; color: white; font-size: 16px;" @click="toggle" >
                         <a-icon style="width: 14px;" :component="MenuSvg" />
                     </li>
                 </div>
                 <a-menu theme="dark" mode="inline" :defaultSelectedKeys="[]">               
-                    <a-menu-item key="1" class="fl-border reveal">
+                    <a-menu-item key="1" class="highlight reveal">
                         <a-icon type="user" />
                         <span>nav 1</span>
                     </a-menu-item>
-                    <a-menu-item key="2" class="fl-border reveal">
+                    <a-menu-item key="2" class="highlight reveal">
                         <a-icon type="video-camera" />
                         <span>nav 2</span>
                     </a-menu-item>
-                    <a-menu-item key="3" class="fl-border reveal">
+                    <a-menu-item key="3" class="highlight reveal">
                         <a-icon type="upload" />
                         <span>nav 3</span> 
                     </a-menu-item>

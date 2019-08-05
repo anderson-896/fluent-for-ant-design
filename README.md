@@ -31,8 +31,11 @@ npm i -S fluent-for-ant-design
   <div>
     <div class="acrylic">Acrylic</div>
     <div class="acrylic light">Acrylic light</div>
-    <div class="fl-border reveal">Reveal</div>
-    <div class="fl-border reveal light">Reveal</div>
+    <div class="reveal">Reveal</div>
+    <div class="highlight reveal">Reveal with highlight</div>
+    <div class="highlight reveal light">Reveal with highlight</div>
+    <div class="highlight highlight-small reveal">Reveal with small highlight</div>
+    <div class="highlight highlight-large reveal light">Reveal with large highlight</div>
   </div>
 </template>
 

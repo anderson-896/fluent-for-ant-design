@@ -1,12 +1,12 @@
 <template>
   <a-form  id="components-form-demo-validate-other" :form="form" @submit="handleSubmit">
-    <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="Plain Text">
+    <a-form-item class=" reveal light" v-bind="formItemLayout" label="Plain Text">
       <span class="ant-form-text">Vue</span>
     </a-form-item>
-    <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="Plain Text">
+    <a-form-item class=" reveal light" v-bind="formItemLayout" label="Plain Text">
       <span class="ant-form-text">Vue</span>
     </a-form-item>
-    <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="Select" has-feedback>
+    <a-form-item class=" reveal light" v-bind="formItemLayout" label="Select" has-feedback>
       <a-select
         v-decorator="[ 'select', {rules: [{ required: true, message: 'Please select your country!' }]} ]"
         placeholder="Please select a country"
@@ -16,7 +16,7 @@
       </a-select>
     </a-form-item>
 
-    <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="Select[multiple]">
+    <a-form-item class=" reveal light" v-bind="formItemLayout" label="Select[multiple]">
       <a-select
         v-decorator="[
           'select-multiple', {
@@ -31,31 +31,31 @@
       </a-select>
     </a-form-item>
 
-    <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="InputNumber">
+    <a-form-item class=" reveal light" v-bind="formItemLayout" label="InputNumber">
       <a-input-number v-decorator="['input-number', { initialValue: 3 }]" :min="1" :max="10" />
       <span class="ant-form-text">machines</span>
     </a-form-item>
 
-    <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="Switch">
+    <a-form-item class=" reveal light" v-bind="formItemLayout" label="Switch">
       <a-switch v-decorator="['switch', { valuePropName: 'checked' }]" />
     </a-form-item>
 
-    <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="Slider">
+    <a-form-item class=" reveal light" v-bind="formItemLayout" label="Slider">
       <a-slider
         v-decorator="['slider']"
         :marks="{ 0: 'A', 20: 'B', 40: 'C', 60: 'D', 80: 'E', 100: 'F' }"
       />
     </a-form-item>
 
-    <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="Radio.Group">
+    <a-form-item class=" reveal light" v-bind="formItemLayout" label="Radio.Group">
       <a-radio-group v-decorator="['radio-group']">
-        <a-radio class="fl-border reveal light" value="a">item 1</a-radio>
-        <a-radio class="fl-border reveal light" value="b">item 2</a-radio>
-        <a-radio class="fl-border reveal light" value="c">item 3</a-radio>
+        <a-radio class="highlight reveal light" value="a">item 1</a-radio>
+        <a-radio class="highlight reveal light" value="b">item 2</a-radio>
+        <a-radio class="highlight reveal light" value="c">item 3</a-radio>
       </a-radio-group>
     </a-form-item>
 
-    <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="Radio.Button">
+    <a-form-item class=" reveal light" v-bind="formItemLayout" label="Radio.Button">
       <a-radio-group v-decorator="['radio-button']">
         <a-radio-button value="a">item 1</a-radio-button>
         <a-radio-button value="b">item 2</a-radio-button>
@@ -63,37 +63,37 @@
       </a-radio-group>
     </a-form-item>
 
-    <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="Checkbox.Group">
+    <a-form-item class=" reveal light" v-bind="formItemLayout" label="Checkbox.Group">
       <a-checkbox-group
         v-decorator="['checkbox-group', {initialValue: ['A', 'B']}]"
         style="width: 100%;"
       >
         <a-row>
           <a-col :span="8">
-            <a-checkbox class="fl-border reveal light" value="A">A</a-checkbox>
+            <a-checkbox class="highlight reveal light" value="A">A</a-checkbox>
           </a-col>
           <a-col :span="8">
-            <a-checkbox class="fl-border reveal light" disabled value="B">B</a-checkbox>
+            <a-checkbox class="highlight reveal light" disabled value="B">B</a-checkbox>
           </a-col>
           <a-col :span="8">
-            <a-checkbox class="fl-border reveal light" value="C">C</a-checkbox>
+            <a-checkbox class="highlight reveal light" value="C">C</a-checkbox>
           </a-col>
           <a-col :span="8">
-            <a-checkbox class="fl-border reveal light" value="D">D</a-checkbox>
+            <a-checkbox class="highlight reveal light" value="D">D</a-checkbox>
           </a-col>
           <a-col :span="8">
-            <a-checkbox class="fl-border reveal light" value="E">E</a-checkbox>
+            <a-checkbox class="highlight reveal light" value="E">E</a-checkbox>
           </a-col>
         </a-row>
       </a-checkbox-group>
     </a-form-item>
 
-    <a-form-item class="fl-border reveal light" v-bind="formItemLayout" label="Rate">
+    <a-form-item class=" reveal light" v-bind="formItemLayout" label="Rate">
       <a-rate v-decorator="['rate', {initialValue: 3.5}]" allow-half />
     </a-form-item>
 
     <a-form-item
-      class="fl-border reveal light" 
+      class=" reveal light" 
       v-bind="formItemLayout"
       label="Upload"
       extra="longgggggggggggggggggggggggggggggggggg"
@@ -107,13 +107,13 @@
         action="/upload.do"
         list-type="picture"
       >
-        <a-button>
+        <a-button class="highlight highlight-small reveal light">          
           <a-icon type="upload" />Click to upload
         </a-button>
       </a-upload>
     </a-form-item>
 
-    <a-form-item class="fl-border reveal light"  v-bind="formItemLayout" label="Dragger">
+    <a-form-item class=" reveal light"  v-bind="formItemLayout" label="Dragger">
       <div class="dropbox">
         <a-upload-dragger
           v-decorator="['dragger', {
@@ -132,8 +132,8 @@
       </div>
     </a-form-item>
 
-    <a-form-item class="fl-border reveal light"  :wrapper-col="{ span: 12, offset: 6 }">
-      <a-button type="primary" html-type="submit">Submit</a-button>
+    <a-form-item class=" reveal light"  :wrapper-col="{ span: 12, offset: 6 }">
+      <a-button class="highlight highlight-small reveal light" type="primary" html-type="submit">Submit</a-button>
     </a-form-item>
   </a-form>
 </template>
