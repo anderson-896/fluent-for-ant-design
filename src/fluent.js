@@ -28,10 +28,10 @@ const revealEle = (element) => {
         let intensity = 0.1;
 
         if (percentageX > 0 && percentageX < 100 && percentageY > 0 && percentageY < 100) {
-            intensity = 0.1;
-            element.style.borderColor = "transparent";
-            element.style.borderImage = "radial-gradient(circle at " + percentageX + "% " + percentageY + "%, rgba(" + rgb + "," + intensity + "), rgba(" + rgb + ",0.3) 200px) 1";
-            return;
+            intensity = 0.70;
+            // element.style.borderColor = "transparent";
+            // element.style.borderImage = "radial-gradient(circle at " + percentageX + "% " + percentageY + "%, rgba(" + rgb + "," + intensity + "), rgba(" + rgb + ",0.3) 200px) 1";
+            // return;
         }
         else 
         if (mousePositionX > -20 && mousePositionX < menuWidth + 20 && mousePositionY > -20 && mousePositionY < menuHeight + 20) {
