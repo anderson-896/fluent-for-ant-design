@@ -1,6 +1,6 @@
 {
   "name": "fluent-for-ant-design",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "The Microsoft's Fluent Design System theme For Vue Ant Design",
   "author": "andersonaraujo.ti@gmail.com",
   "private": false,
@@ -63,5 +63,16 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "main": "src/Mixins/FluentMixin.vue"
+  "main": "src/Mixins/FluentMixin.vue",
+  "keywords": [
+    "fluent-design",
+    "fluent",
+    "modern-design",
+    "acrylic",
+    "reveal",
+    "transparent",
+    "vue",
+    "vuejs",
+    "microsoft"
+  ]
 }
