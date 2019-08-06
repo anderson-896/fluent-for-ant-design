@@ -28,23 +28,23 @@ const revealEle = (element) => {
         let intensity = 0.1;
 
         if (percentageX > 0 && percentageX < 100 && percentageY > 0 && percentageY < 100) {
-            intensity = 0.70;
+            intensity = 0.40;
             // element.style.borderColor = "transparent";
             // element.style.borderImage = "radial-gradient(circle at " + percentageX + "% " + percentageY + "%, rgba(" + rgb + "," + intensity + "), rgba(" + rgb + ",0.3) 200px) 1";
             // return;
         }
         else 
         if (mousePositionX > -20 && mousePositionX < menuWidth + 20 && mousePositionY > -20 && mousePositionY < menuHeight + 20) {
-            intensity = 0.65;
+            intensity = 0.26;
         }
         else if (mousePositionX > -40 && mousePositionX < menuWidth + 40 && mousePositionY > -40 && mousePositionY < menuHeight + 40) {
-            intensity = 0.5;
+            intensity = 0.24;
         }
         else if (mousePositionX > -60 && mousePositionX < menuWidth + 60 && mousePositionY > -60 && mousePositionY < menuHeight + 60) {
-            intensity = 0.35;
+            intensity = 0.20;
         }
         else if (mousePositionX > -80 && mousePositionX < menuWidth + 80 && mousePositionY > -80 && mousePositionY < menuHeight + 80) {
-            intensity = 0.2;
+            intensity = 0.15;
         }
         else if (mousePositionX > -100 && mousePositionX < menuWidth + 100 && mousePositionY > -100 && mousePositionY < menuHeight + 100) {
             intensity = 0.1;
