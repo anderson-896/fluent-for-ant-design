@@ -9,15 +9,15 @@
                     </li>
                 </div>
                 <a-menu theme="dark" mode="inline" :defaultSelectedKeys="[]">               
-                    <a-menu-item key="1" class="highlight reveal">
+                    <a-menu-item key="1" class="highlight highlight-large reveal">
                         <a-icon type="user" />
                         <span>nav 1</span>
                     </a-menu-item>
-                    <a-menu-item key="2" class="highlight reveal">
+                    <a-menu-item key="2" class="highlight highlight-large reveal">
                         <a-icon type="video-camera" />
                         <span>nav 2</span>
                     </a-menu-item>
-                    <a-menu-item key="3" class="highlight reveal">
+                    <a-menu-item key="3" class="highlight highlight-large reveal">
                         <a-icon type="upload" />
                         <span>nav 3</span> 
                     </a-menu-item>
